@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Handling</title>
+</head>
+<body>
+  <form action="{% url 'SUBMIT' %}" method="post">
+      {% csrf_token %}
+    First Name : <input type="text", name="fn"><br>
+    Last Name : <input type="text", name="ln"><br>
+    Mobile No: <input type="tel", name="mn"><br>
+    <input type="submit", name="click-here">
+  </form>
+</body>
+</html>
